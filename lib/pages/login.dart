@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:notakos_mobile/component/form.dart';
 import 'package:notakos_mobile/component/logo_full.dart';
+import 'package:notakos_mobile/component/password_form.dart';
+import 'package:notakos_mobile/component/username_form.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,7 +23,11 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Container(
               margin: const EdgeInsets.only(top: 50.0),
-              child: const FormInput(),
+              child: const UsernameForm(),
+            ),
+            Container(
+              margin: const EdgeInsets.only(top: 50.0),
+              child: const PasswordForm(),
             ),
           ]),
         ));

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FormInput extends StatelessWidget {
-  const FormInput({super.key});
+class PasswordForm extends StatelessWidget {
+  const PasswordForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,15 +10,16 @@ class FormInput extends StatelessWidget {
         SizedBox(
           width: 350,
           child: TextField(
+            obscureText: true,
             cursorColor: const Color.fromRGBO(255, 239, 0, 1),
             style: const TextStyle(color: Color.fromRGBO(255, 239, 0, 1)),
             decoration: InputDecoration(
-              labelText: 'Nama Pengguna',
-              labelStyle:
-                  const TextStyle(color: Color.fromRGBO(255, 239, 0, 1)),
-              hintText: 'Contoh: ilhamragadn',
+              labelText: 'Kata Sandi',
+              labelStyle: const TextStyle(
+                  color: Color.fromRGBO(255, 239, 0, 1), fontSize: 18.0),
+              hintText: 'Masukkan kata sandimu',
               hintStyle:
-                  const TextStyle(color: Color.fromRGBO(255, 239, 0, 0.7)),
+                  const TextStyle(color: Color.fromRGBO(217, 217, 217, 1)),
               enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(18),
                   borderSide: const BorderSide(
