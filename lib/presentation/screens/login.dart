@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:notakos_mobile/component/logo_full.dart';
-import 'package:notakos_mobile/component/password_form.dart';
-import 'package:notakos_mobile/component/username_form.dart';
+import 'package:notakos_mobile/presentation/widgets/logo_full.dart';
+import 'package:notakos_mobile/presentation/widgets/password_form.dart';
+import 'package:notakos_mobile/presentation/widgets/username_form.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
